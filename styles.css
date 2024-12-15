@@ -1,77 +1,116 @@
-:root {
-    --color1: #ffddd8;
-    --color2: #e9c8c3;
-    --color3: #d3b3ae;
-    --color4: #bd9e99;
-    --color5: #a78984;
-}
+    :root {
+        --color1: #ffddd8;
+        --color2: #e9c8c3;
+        --color3: #d3b3ae;
+        --color4: #bd9e99;
+        --color5: #a78984;
+    }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.6;
-}
+    body {
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1.6;
+    }
 
-/* Navbar */
-.navbar {
-    background-color: var(--color5);
-}
+    /* Navbar */
+    .navbar {
+        background-color: var(--color5);
+    }
 
-/* Hero Section */
-.hero {
-    background: var(--color4);
-    color: white;
-    padding: 4rem 0;
-}
+    /* Hero Section */
+    .hero {
+        background: var(--color4);
+        color: white;
+        padding: 4rem 0;
+    }
 
-/* Services Section */
-/* Cards: Padronização */
-.service-card {
+    h3 {
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        color: var(--color5);
+    }
+    
+
+    /* Services Section */
+    /* Cards: Padronização */
+    .service-card {
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+        background-color: var(--color1);
+        height: 100%; /* Garante que todos os cards tenham o mesmo tamanho */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service-card img {
+        height: 400px; /* Tamanho fixo para imagens */
+        object-fit: cover; /* Ajusta a imagem sem distorcer */
+        border-radius: 15px 15px 0 0;
+    }
+
+    .service-card .card-body {
+        flex-grow: 1; /* Expande para ocupar o espaço restante */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Distribui título e preço */
+        padding: 20px;
+    }
+
+    .service-card .card-title {
+        font-weight: bold;
+        color: var(--color5);
+        margin-bottom: 10px;
+    }
+
+    .service-card .price {
+        color: var(--color4);
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: right;
+        margin-top: auto;
+    }
+
+    .service-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    #faq .accordion-item {
     border: none;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    background-color: var(--color1);
-    height: 100%; /* Garante que todos os cards tenham o mesmo tamanho */
-    display: flex;
-    flex-direction: column;
+    margin-bottom: 15px;
 }
-
-.service-card img {
-    height: 400px; /* Tamanho fixo para imagens */
-    object-fit: cover; /* Ajusta a imagem sem distorcer */
-    border-radius: 15px 15px 0 0;
-}
-
-.service-card .card-body {
-    flex-grow: 1; /* Expande para ocupar o espaço restante */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Distribui título e preço */
-    padding: 20px;
-}
-
-.service-card .card-title {
-    font-weight: bold;
+#faq .accordion-header .accordion-button {
+    background-color: var(--color2);
     color: var(--color5);
-    margin-bottom: 10px;
-}
-
-.service-card .price {
-    color: var(--color4);
-    font-size: 1.2rem;
     font-weight: bold;
-    text-align: right;
-    margin-top: auto;
+}
+#faq .accordion-header .accordion-button.collapsed {
+    background-color: var(--color1);
 }
 
-
-/* Contact Section */
-#contact {
-    background-color: var(--color4);
-    color: white;
+.accordion-collapse {
+    overflow: hidden;
+    transition: height 0.3s ease;
 }
 
-footer {
-    background-color: var(--color5);
-    color: white;
-}
+    
+
+    /* Contact Section */
+    #contact {
+        background-color: var(--color4);
+        color: white;
+        padding-bottom: 5rem; /* Garante espaçamento extra no final */
+    }
+    
+
+    .btn-warning:active {
+        transform: scale(0.95);
+        box-shadow: none;
+    }
+    
+
+    footer {
+        background-color: var(--color5);
+        color: white;
+    }

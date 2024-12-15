@@ -193,25 +193,73 @@
         </div>
     </section>
 
+    <section id="faq" class="py-5 color3">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Perguntas Frequentes</h2>
+            <div class="accordion" id="faqAccordion" data-aos="fade-up">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq1">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                            Quanto tempo dura cada atendimento?
+                        </button>
+                    </h2>
+                    <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            O tempo varia dependendo do serviço. Em média, unhas de gel levam 1h30 a 2h, e o design de sobrancelhas cerca de 40 minutos.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                            Como agendar um atendimento?
+                        </button>
+                    </h2>
+                    <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Basta clicar no botão de WhatsApp na seção de contato para fazer seu agendamento de forma rápida e prática.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
     <!-- Contact Section -->
     <section id="contact" class="py-5 color4 text-white">
         <div class="container">
             <h2 class="text-center mb-5" data-aos="fade-up">Entre em Contato</h2>
             <p class="text-center" data-aos="fade-up">Agende seu atendimento pelo WhatsApp!</p>
-            <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="text-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <a href="https://wa.me/+5511993232558" class="btn btn-warning btn-lg">Agendar Agora</a>
             </div>
+            
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="text-center py-4 color5 text-white">
-        <p>&copy; 2024 Brando Beauty. Todos os direitos reservados.</p>
+        <div class="container">
+            <p class="mb-2">&copy; 2024 Brando Beauty. Todos os direitos reservados.</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/brandobeauty_/" class="me-3"><img src="images/instagram_icon.png" alt="Instagram" width="24"></a>
+                <a href="https://wa.me/+5511993232558" class="me-3"><img src="images/whatsapp-icon.png" alt="WhatsApp" width="24"></a>
+            </div>
+        </div>
     </footer>
+    
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+<script>
+    ScrollReveal().reveal('#services', { duration: 1000, origin: 'bottom', distance: '50px' });
+    ScrollReveal().reveal('#about', { duration: 1000, origin: 'left', distance: '50px' });
+    ScrollReveal().reveal('#contact', { duration: 1000, origin: 'right', distance: '50px' });
+</script>
+
     <script>
         AOS.init();
     </script>
