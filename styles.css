@@ -94,6 +94,30 @@
     transition: height 0.3s ease;
 }
 
+
+/* Social Links */
+.social-link {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--color1);
+    background-color: var(--color4);
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-link:hover {
+    color: white;
+    background-color: var(--color5);
+    transform: scale(1.1);
+}
+
+.social-link:active {
+    transform: scale(0.95);
+}
+
     
 
     /* Contact Section */
